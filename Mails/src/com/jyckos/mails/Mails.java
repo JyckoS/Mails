@@ -28,6 +28,7 @@ public class Mails extends JavaPlugin {
 		if (!checkUUIDAPI()) {
 			return;
 		}
+		new Metrics(this);
 		this.getConfig().options().copyDefaults(true);
 		this.saveConfig();
 		this.getCommand("mail").setExecutor(new MailCommand(this));
