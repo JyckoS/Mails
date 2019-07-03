@@ -1,0 +1,108 @@
+﻿items:
+  instructions:
+    name: "&e "
+    lore:
+    - "&b&l&nInstructions"
+    - "&7 "
+    - "&2Leftclick&7: Send to chat."
+    - "&2Rightclick&7: Mark as read."
+    - "&2&lSHIFT &2Rightclick&7: Delete mail."
+    material: GLOWSTONE
+    durability: 0
+  clear:
+    name: "&4&lClear all mails"
+    lore:
+    - "&7Click to clear all"
+    - "&7existing mails."
+    material: REDSTONE_BLOCK
+    durability: 0
+  read_mail:
+    name: "&7From &a%a &8(&o%b&8) &a&LREAD &a&l✓"
+    lore:
+    - ""
+    material: PAPER
+    durability: 0
+  mail:
+    name: "&7From &a%a &8(&o%b&8)"
+    lore:
+    - ""
+    material: PAPER
+    durability: 0
+  next_page:
+    name: "&a&lNext Page "
+    lore:
+    - "&7Click to navigate to the"
+    - "&7next page."
+    material: STAINED_GLASS_PANE
+    durability: 13
+  prev_page:
+    name: "&c&lPrevious Page "
+    lore:
+    - "&7click to navigate to the"
+    - "&7previous page."
+    material: STAINED_GLASS_PANE
+    durability: 14
+  filler:
+    name: "&e "
+    lore:
+    - " "
+    material: STAINED_GLASS_PANE
+    durability: 15
+
+
+options:
+  data: #Strings
+    date_format: "yyyy-MM-dd 'at' HH:mm:ss z"
+    non_player_name: "&4Server"
+    mail_itemname: "&7From &a%a &7at &a%b"
+  value:
+    mail_reminder_delay: 900 #in Seconds
+    mail_save_delay: 300 #in Seconds
+    mail_cooldown: 5 #in Seconds
+
+layouts:
+  invitation:
+  - "&b&m                             "
+  - "&7Hi &f%f1&7, you have been invited"
+  - "&7to join the &a%f2 &7on"
+  - "&6&c%f3"
+  - "&b&m                             "
+  special:
+  - "&6&m                             "
+  - "&7Hi &f%f1&7, you received a redeemcode"
+  - "&7of the value &6%f2 Cash &7with"
+  - "&7the code of:"
+  - "&e&l%f3"
+  - "&6&m                             "
+
+
+messages:
+  show_mail: # %a = Sender, %b = Date, %c = Message
+  - " "
+  - "&e&lMail &7from &a%a &7(&o%b&7)"  
+  - "%c" 
+  - " "
+  admin_help_message:
+  - "&4- &c/mail &creload"
+  - "&4- &c/mail composelayout <Name> <Layout> &a<Field 1> &e<Field 2> &6<Field 3> &e<etc>"
+  - "&4- &c/mail layouts"
+  - "&4- &c/mail viewlayout <Layout>"
+  help_message:
+  - "&e&lMails"
+  - "&7- &f/mail send &8<Name> <Messages>"
+  - "&7- &f/mail clear"
+  - "&7- &f/mail read"
+
+short_messages:
+  mail_cooldown: "&7Please wait before sending another mail."
+  unread_mails: "&6&lMails: &7You have &e%a &7unread mails, &f/mail read &7to read."
+  not_enough_field: "&7Field invalid!"
+  layout_unexist: "&cInvalid layout."
+  no_permission: "&cUnauthorized."
+  too_short: "&7Your message is too short!"
+  no_mails: "&7You have no mails."
+  mail_cleared: "&a&lMails cleared!"
+  mail_received: "&7You received a mail from &a%a&7, read with &f/mail read&7." # %a = Sender
+  not_enough_args: "&cNot enough arguments! %a" # %a = Args
+  mail_sent: "&lMail sent to &6%a&r&l!"
+  player_never_exists: "&c&lOops! &7That player has never existed before."

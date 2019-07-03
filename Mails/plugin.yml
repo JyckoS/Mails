@@ -1,0 +1,11 @@
+name: Mails
+version: 15
+api-version: 1.13
+author: Gober
+softdepend: [UUIDAPI]
+description: Read and send emails easily!
+main: com.jyckos.mails.Mails
+commands:
+  mail:
+    usage: /<command>
+    aliases: [mails, email]
